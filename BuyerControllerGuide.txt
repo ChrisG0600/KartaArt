@@ -1,0 +1,17 @@
+// Note 
+//  Basically the artworks came from the defined method and relationship
+//  It came from the Seller model since it is defined there.
+//  Laravel provide a name when used the withCount()
+// Naming of the laravel would be "methodDefinesinyourModel_count()"
+//  
+//  Example of the relationship in Seller model(Since I use Seller Model here on this method):
+//  public function artworks() {
+//      return $this->hasMany(Artwork::class, 'artist_name');
+//  }
+//
+//  If the relationship method name changes, update withCount accordingly.
+//  Basically if the artworks() has renamed, the withCount(['artworks']) shoule be change accordingly 
+//  public function renamed() {
+//      return $this->hasMany(Artwork::class, 'artist_name');
+//  }
+//  then apply it to: withCount(['renamed' => then the rest of the code])
