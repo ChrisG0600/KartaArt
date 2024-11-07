@@ -29,10 +29,10 @@
                     <h3 class="text-lg font-semibold">Total Artworks</h3>
                     <p class="text-4xl font-bold text-green-500 mt-2">{{$totalArtworks}}</p>
                 </div>
-                <div class="bg-yellow-100 p-6 rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+                {{-- <div class="bg-yellow-100 p-6 rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
                     <h3 class="text-lg font-semibold">Pending Orders</h3>
                     <p class="text-4xl font-bold text-yellow-500 mt-2">{{$pendingOrders}}</p>
-                </div>
+                </div> --}}
                 <div class="bg-teal-100 p-6 rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
                     <h3 class="text-lg font-semibold">Preparing Orders</h3>
                     <p class="text-4xl font-bold text-teal-500 mt-2">{{$preparingOrders}}</p>
@@ -49,4 +49,3 @@
 </body>
 
 </html>
-s

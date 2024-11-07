@@ -115,9 +115,9 @@ class SellerController extends Controller
     
         $totalArtworks = Artwork::where('artist_name', $seller->id)->count();
     
-        $pendingOrders = Order::whereHas('orderItems.artwork', function ($query) use ($seller) {
-            $query->where('artist_name', $seller->id);
-        })->where('order_status', 'Pending')->count();
+        // $pendingOrders = Order::whereHas('orderItems.artwork', function ($query) use ($seller) {
+        //     $query->where('artist_name', $seller->id);
+        // })->where('order_status', 'Pending')->count();
     
         $preparingOrders = Order::whereHas('orderItems.artwork', function ($query) use ($seller) {
             $query->where('artist_name', $seller->id);
@@ -127,7 +127,7 @@ class SellerController extends Controller
             $query->where('artist_name', $seller->id);
         })->where('order_status', 'Picked Up')->count();
     
-        return view('Seller.dashboard', compact('sellerName','totalSales', 'totalArtworks', 'pendingOrders', 'preparingOrders', 'pickedUpOrders'));
+        return view('Seller.dashboard', compact('sellerName','totalSales', 'totalArtworks', 'preparingOrders', 'pickedUpOrders'));
     }
     
 
