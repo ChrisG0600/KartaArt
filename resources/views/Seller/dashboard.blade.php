@@ -13,7 +13,7 @@
         <!-- Dashboard Header -->
         <div class="px-5 mb-8">
             <h1 class="text-3xl font-bold text-gray-900">Seller Dashboard</h1>
-            <p class="text-gray-600">Welcome back, {{$sellerName}}!</p>
+            <p class="text-gray-600">Welcome back,  {{$sellerName}}!</p>
         </div>
 
         <!-- Main Dashboard Content -->
